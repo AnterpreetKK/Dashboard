@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <img src="https://t3.ftcdn.net/jpg/06/45/93/04/360_F_645930408_zd3PiVKrCqK37mj1IZZckWdSpjz2ZwV7.jpg" alt="GreenTask Logo" class="logo">
+            <h1>Admin Dashboard</h1>
+        </header>
+
+        <main>
+            <nav class="side-menu">
+                <ul>
+                    <li><a href="#task-section">Task Management</a></li>
+                    <li><a href="#user-section">User Management</a></li>
+                    <li><a href="#profile-section">Profile</a></li>
+                </ul>
+            </nav>
+
+            <section class="content">
+                <section id="task-section">
+                    <h2>Task Management</h2>
+                    <form class="task-form" id="taskForm">
+                        <input type="text" id="taskName" placeholder="Task Name" required>
+                        <input type="text" id="taskEmployee" placeholder="Assign to Employee" required>
+                        <button class="btn" type="submit">Add Task</button>
+                    </form>
+                    <br>
+                    <h3>Tasks List</h3>
+                    <br>
+                    <ul id="taskList">
+                        <!-- Dynamic tasks will be added here -->
+                    </ul>
+                </section>
+
+                <section id="profile-section">
+                    <h2>Admin Profile</h2>
+                    <p><strong>Username:</strong> admin</p>
+                    <p><strong>Email:</strong> admin@greentask.com</p>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTask Solutions - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://t3.ftcdn.net/jpg/06/45/93/04/360_F_645930408_zd3PiVKrCqK37mj1IZZckWdSpjz2ZwV7.jpg" alt="GreenTask Logo" class="logo">
+        <h2>Login to GreenTask Solutions</h2>
+        <form class="login-form" id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="userType">
+                <option value="admin">Admin</option>
+            </select>
+            <p>write password123 for login</p><br>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
